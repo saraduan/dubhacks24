@@ -1,0 +1,396 @@
+/* edit-profile.css*/
+
+body {
+    background-color: #5F5AA2;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8;
+}
+
+.profile-button {
+    background: #5F5AA2;
+    box-shadow: none;
+    border: none;
+}
+
+.profile-button:hover {
+    background: #5F5AA2;
+}
+
+.profile-button:focus {
+    background: #5F5AA2;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #5F5AA2;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+/* profile page */
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8;
+}
+
+.profile-button {
+    background: #5F5AA2;
+    box-shadow: none;
+    border: none;
+}
+
+.profile-button:hover {
+    background: #5F5AA2;
+}
+
+.profile-button:focus {
+    background: #5F5AA2;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #5F5AA2;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+/* login page */
+html, body {
+    height: 100%;
+    margin:0;
+  }
+  
+  body {
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 125px;
+  }
+  
+  h1 {
+    text-align: center;
+    padding-bottom: .75em;
+    padding-top: .5em;
+  }
+  
+  #section1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .flex-item{
+    margin: 20px;
+    width: 500px;
+    height: 500px;
+    flex: 1;
+    background-color: white;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.16),
+      0 1px 3px rgba(0, 0, 0, 0.23);
+    box-sizing: border-box;
+  }
+  
+  form {
+    padding: 2rem;
+  }
+  
+  .flex-item h2 {
+    margin-bottom: 1.2em;
+  }
+  
+  label {
+    font-size: 20px; 
+    display: block;
+  }
+  
+  #input {
+    font-size: 1.5rem;
+  }
+  
+  .flex-item input {
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 7px;
+  }
+  
+  .flex-item button {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: indigo;
+    color: white;
+  }
+  
+  /* Saved Jobs*/
+
+body {
+    background-color: #c1bbdd ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+   text-align: left;
+   font-weight: bold;   
+   margin-bottom: 5px;
+}
+
+p {
+  margin-top: 0; 
+  margin-bottom: 10px;
+}
+
+thead {
+    display: none;
+}
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+} 
+
+.navbar-nav .nav-link {
+  font-family: 'Poppins', sans-serif;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+td {
+    padding-left: 10px;
+}
+
+.action {
+  text-align: right;
+  padding-right: 10px;
+} 
+
+.jobdesc{
+    margin-bottom: 1rem;
+    
+}
+.companyloca{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.deadline {
+    font-size: .7em;
+    color: darkgreyx;
+}
+tbody{
+    background-color: white;
+}
+
+tbody tr {
+    border-bottom: 1px solid black; 
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody tr:hover{
+    background-color: lightgrey;
+}
+
+/* Job Posting */
+body {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.job-posting-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 9vh;
+}
+
+.basic-info-container, .review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.basic-info-container h1 {
+    font-size: 40px;
+}
+
+.basic-info-container p {
+    font-size: 17px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #5F5AA2;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+}
+
+.review p {
+    margin-top: -5px;
+}
+
+@media (max-width: 768px) {
+    .job-posting-container {
+      width: 90%;
+    }
+  }
+  
+  /* Index - style */ 
+  .index body {
+    background-color: #f8f9fa;
+    margin: 0;
+  }
+  
+  .left-section {
+    background-color: #808080;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    overflow-y: auto;
+    z-index: 1;
+    margin-top: 55px;
+  }
+  
+  .left-section a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .right-section {
+    padding: 20px;
+    margin-left: 30%;
+    margin-top: 55px;
+    z-index: 0;
+  }
+  
+  .job-listing {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .job-listing img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 15px;
+    border-radius: 50px;
+    padding: 1.5px;
+    border: 1px solid black;
+  }
+  
+  .job-listing .job-listing-items h5 {
+    margin-bottom: 0;
+    
+  }
+  
+  .job-listing .job-listing-items p:first-of-type {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #808080;
+  }
+  
+  .job-listing .job-listing-items p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .job-listing .job-listing-items p:last-of-type {
+    margin-top: 10px;
+    color: #808080;
+  }
+  
+  @media (max-width: 992px) {
+    .left-section {
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
+      z-index: 0;
+    }
+  
+    .right-section {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  
+
+

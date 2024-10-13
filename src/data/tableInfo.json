@@ -1,0 +1,50 @@
+[
+    {
+        "title":"Librarian Assistant",
+        "company": "University of Washington",
+        "location": "On-site, Seattle WA",
+        "deadline": "Apply by Decemeber 14, 2025"
+    },
+
+    {
+        "title":"Dishwasher",
+        "company": "Chimac",
+        "location": "On-site, Seattle WA",
+        "deadline": "Apply by Februray 10, 2025"
+    },
+
+    {
+        "title":"Waitress",
+        "company": "Cafe on the Ave",
+        "location": "On-site, Seattle WA",
+        "deadline": "Apply by Februray 16, 2025"
+    },
+
+    {
+        "title":"Sales Consultant",
+        "company": "CarMax",
+        "location": "Renton, WA",
+        "deadline": "Apply by March 3, 2025"
+    },
+
+    {
+        "title":"Retail Sales Associate",
+        "company": "Urban Outfitters",
+        "location": "Tukwila, WA",
+        "deadline": "Apply by April 8, 2025"
+    },
+
+    {
+        "title":"Dishwasher",
+        "company": "Jollibee",
+        "location": "Tukwila, WA",
+        "deadline": "Apply by March 3, 2025"
+    },
+
+    {
+        "title":"Cashier",
+        "company": "Goodwill",
+        "location": "Portland, OR",
+        "deadline": "Apply by Decemeber 9, 2025"
+    }
+]

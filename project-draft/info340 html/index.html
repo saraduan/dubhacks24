@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/allcss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.20.0/dist/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title>Homepage</title>
+</head>
+<body class="index">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Connect</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="savedJobs.html">My Jobs</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">
+                  <i class="bi bi-person-fill"></i> Profile
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- Left Section -->
+<div class="left-section">
+  <ul class="list-unstyled">
+    <li><a class="text-decoration-none text-white" href="#"><i class="bi bi-house-door"></i> My Jobs</a></li>
+    <li><a class="text-decoration-none text-white" href="#"><i class="bi bi-gear"></i> Preferences</a></li>
+    <li><a class="text-decoration-none text-white" href="#"><i class="bi bi-bar-chart"></i> Demonstrate Skills</a></li>
+    <li><a class="text-decoration-none text-white" href="#"><i class="bi bi-journal-bookmark"></i> Interview Prep</a></li>
+    <li><a class="text-decoration-none text-white" href="#"><i class="bi bi-file-earmark-text"></i> Resume Builder</a></li>
+    <li><a class="text-decoration-none text-white" href="#"><i class="bi bi-person"></i> Job Seeker Guidance</a></li>
+    <li><a class="text-decoration-none text-white" href="#"><i class="bi bi-gear"></i> Application Settings</a></li>
+    <li><a class="text-decoration-none text-white" href="#"><i class="bi bi-upload"></i> Post a Job</a></li>
+  </ul>
+</div>
+
+
+<!-- Right Section -->
+<div class="right-section">
+  <!-- Search Bar -->
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Search for a job..." id="searchInput">
+    <button class="btn btn-primary" type="button" onclick="searchJobs()">Search</button>
+  </div>
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-secondary" onclick="suggestSearch('Barista')">Barista</button>
+    <button type="button" class="btn btn-secondary" onclick="suggestSearch('Electrician')">Electrician</button>
+    <button type="button" class="btn btn-secondary" onclick="suggestSearch('Janitor')">Janitor</button>
+  </div>
+<script>
+  function suggestSearch(keyword) {
+    document.getElementById('searchInput').value = keyword;
+    searchJobs();
+  }
+</script>
+
+<br><br>
+
+
+  <!-- Job Listings -->
+  <div class="job-listing" data-title="Barista">
+    <div class="d-flex">
+      <img src="assets/logo.png" alt="Company Logo" class="mr-3">
+      <div class="job-listing-items">
+        <h5><a class="text-decoration-none text-black" href="#">Barista</a></h5>
+        <p>District Market UW West Campus</p>
+        <p>Location: Seattle, WA</p>
+        <p>Pay: $20,000 - $30,000 per year</p>
+        <p>Minimum Qualifications: High School Diploma</p>
+        <p>Posted yesterday</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="job-listing" data-title="Chef">
+    <div class="d-flex">
+      <img src="assets/apple.png" alt="Company Logo" class="mr-3">
+      <div class="job-listing-items">
+        <h5><a class="text-decoration-none text-black" href="#">Chef</a></h5>
+        <p>Aladdin Gyro-Cery & Deli</p>
+        <p>Location: University District, WA</p>
+        <p>Pay: $30,000 - $40,000 per year</p>
+        <p>Minimum Qualifications: Some College</p>
+        <p>Posted 6 days ago</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="job-listing" data-title="Library Manager">
+    <div class="d-flex">
+      <img src="assets/microsoft.png" alt="Company Logo" class="mr-3">
+      <div class="job-listing-items">
+        <h5><a class="text-decoration-none text-black" href="#">Library Manager</a></h5>
+        <p>UW Libraries</p>
+        <p>Location: Bothell, WA</p>
+        <p>Pay: $30,000 - $40,000 per year</p>
+        <p>Minimum Qualifications: Some College</p>
+        <p>Posted 2 days ago</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="job-listing" data-title="Content Creator">
+    <div class="d-flex">
+      <img src="assets/ebay.png" alt="Company Logo" class="mr-3">
+      <div class="job-listing-items">
+        <h5><a class="text-decoration-none text-black" href="#">Content Creator</a></h5>
+        <p>UW Husky Union Building</p>
+        <p>Location: Seattle, WA</p>
+        <p>Pay: $20,000 - $30,000 per year</p>
+        <p>Minimum Qualifications: High School Diploma</p>
+        <p>Posted 4 days ago</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="job-listing" data-title="Janitor">
+    <div class="d-flex">
+      <img src="assets/walmart.jpeg" alt="Company Logo" class="mr-3">
+      <div class="job-listing-items">
+        <h5><a class="text-decoration-none text-black" href="#">Janitor</a></h5>
+        <p>UW Health Sciences Department</p>
+        <p>Location: Seattle, WA</p>
+        <p>Pay: $20,000 - $30,000 per year</p>
+        <p>Minimum Qualifications: High School Diploma</p>
+        <p>Posted last week</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="job-listing" data-title="Barista">
+    <div class="d-flex">
+      <img src="assets/apple.png" alt="Company Logo" class="mr-3">
+      <div class="job-listing-items">
+        <h5><a class="text-decoration-none text-black" href="#">Barista</a></h5>
+        <p>District Market</p>
+        <p>Location: Seattle, WA</p>
+        <p>Pay: $20,000 - $30,000 per year</p>
+        <p>Minimum Qualifications: High School Diploma</p>
+        <p>Posted 1 week ago</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="job-listing" data-title="Electrician">
+    <div class="d-flex">
+      <img src="assets/logo.png" alt="Company Logo" class="mr-3">
+      <div class="job-listing-items">
+        <h5><a class="text-decoration-none text-black" href="#">Electrician</a></h5>
+        <p>UW Facilities</p>
+        <p>Location: Tacoma, WA</p>
+        <p>Pay: $30,000 - $40,000 per year</p>
+        <p>Minimum Qualifications: Some College</p>
+        <p>Posted 2 weeks ago</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="job-listing" data-title="Electrician">
+    <div class="d-flex">
+      <img src="assets/microsoft.png" alt="Company Logo" class="mr-3">
+      <div class="job-listing-items">
+        <h5><a class="text-decoration-none text-black" href="#">Electrician</a></h5>
+        <p>UW Facilities</p>
+        <p>Location: Seattle, WA</p>
+        <p>Pay: $30,000 - $40,000 per year</p>
+        <p>Minimum Qualifications: Some College</p>
+        <p>Posted 2 weeks ago</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="job-listing" data-title="Electrician">
+    <div class="d-flex">
+      <img src="assets/ebay.png" alt="Company Logo" class="mr-3">
+      <div class="job-listing-items">
+        <h5><a class="text-decoration-none text-black" href="#">Electrician</a></h5>
+        <p>UW Facilities</p>
+        <p>Location: Bothell, WA</p>
+        <p>Pay: $30,000 - $40,000 per year</p>
+        <p>Minimum Qualifications: Some College</p>
+        <p>Posted 2 weeks ago</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<script>
+  function searchJobs() {
+  const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+  const jobListings = document.querySelectorAll('.job-listing');
+
+  jobListings.forEach((listing) => {
+    const title = listing.dataset.title.toLowerCase();
+
+    if (title.includes(searchTerm)) {
+      listing.style.display = 'block';
+    } else {
+      listing.style.display = 'none';
+    }
+  });
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

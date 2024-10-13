@@ -1,0 +1,14 @@
+body {
+    background-color: aliceblue;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+p {
+    line-height: 1.5;
+}
+
